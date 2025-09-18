@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miidias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="fotos/imagempequena.png">
+        <source media="(max-width: 1000px)" srcset="fotos/imgamemedia.png" >
+        <img src="fotos/imagegrande.png" alt = "imagem grande">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTMl5</p>
+       <source src="https://soundcloud.com/user-232861673/aviao-decolando-efeito-sonoro?si=c0926ac0b7d54a65881e2453bf305a91&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing#t=12" type="audio">
+
+       <video constrols>
+            <source src="fotos/Download.mp4" type="video/mp4">
+       </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kzeKlbq4enI?si=uSWc7pBWS7hhzYV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>
