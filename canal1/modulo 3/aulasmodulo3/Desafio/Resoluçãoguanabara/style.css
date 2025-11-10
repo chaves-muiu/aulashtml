@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Parisienne&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Parisienne&family=Passero+One&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --font1:verdana, Geneva, tahoma, sans-serif;
+    --font2: 'Passion One', sans-serif;
+    --font3: 'Sriracha', sans-serif;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    font-family: var(--font1);
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-family: var(--font2);
+    /*2 tecnicas de deixar o h1 maiusculo
+    text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-size: 8vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--font3);
+    padding-top:10vh ;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 30px    ;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(26, 25, 25);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    background-attachment:fixed ;
+}
+
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.267);
+    display: inline-block;
+    text-shadow:  2px 2px 0px black;
+}
+
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
